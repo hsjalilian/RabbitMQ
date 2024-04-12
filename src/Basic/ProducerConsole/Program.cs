@@ -1,6 +1,6 @@
-﻿using System.Text;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
+using System.Text;
 
 IConfiguration configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -20,7 +20,7 @@ var factory = new ConnectionFactory
 using var connection = factory.CreateConnection();
 
 // Creates a channel within the established connection for communication.
-using var channel = connection.CreateModel();       
+using var channel = connection.CreateModel();
 
 
 channel.QueueDeclare(
