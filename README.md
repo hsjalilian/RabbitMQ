@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/hsjalilian/RabbitMQ">
-    <img src="/images/rabbitmq_logo.png" alt="RabitMQ Logo" width="80" height="80">
+    <img src="/images/rabbitmq_logo.png" alt="RabitMQ Logo" width="180" height="80">
   </a>
 
   <h3 align="center">RabbitMQ Message Broker</h3>
@@ -24,7 +24,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#rabbitmq-message-broker">RabbitMQ message-broker</a></li>  
-    <li><a href="#what-is-an-nessage-broker?">What Is an Message-Broker?</a></li>
+    <li><a href="#what-is-an-message-broker?">What Is an Message-Broker?</a></li>
     <li><a href="#what-is-rabbitmq">What Is RabbitMQ</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#how-to-install">How to install</a></li>    
@@ -118,5 +118,11 @@ Link here : [Basic](https://github.com/hsjalilian/RabbitMQ/tree/main/src/Basic)
 
 Similar to the Basic template, but with the addition of multiple consumers to receive messages from each queue.
 
-Link here : [Mulit Worker](https://github.com/hsjalilian/RabbitMQ/tree/main/src/MulitWorker)
+Link here : [Multi Worker](https://github.com/hsjalilian/RabbitMQ/tree/main/src/MultiWorker)
+
+## Exchange  
+
+Similar to the Multi-worker template, in this scenario, we send messages to an exchange. The exchange then routes these messages to the connected queues based on predefined routing rules. Finally, the messages are delivered to consumers that are connected to these queues.
+
+Link here : [Exchange](https://github.com/hsjalilian/RabbitMQ/tree/main/src/Exchange)
 
