@@ -24,22 +24,22 @@ using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
 
 channel.ExchangeDeclare(
-        exchange: "logs",  // Declare an exchange named "logs".
-        type: ExchangeType.Direct // This exchange type is "Direct",  ExchangeType.Direct indicates a direct exchange.
+        exchange: "request",  // Declare an exchange named "request".
+        type: ExchangeType.Topic // This exchange is of type "Topic", allowing for flexible routing based on topic patterns.
     );
 
 // Declares a new queue and retrieves its name from the server.
 var queueName = channel.QueueDeclare().QueueName;
 
 channel.QueueBind(
-         // Binds the newly created queue to the "logs" exchange with an 'info' routing key.
+         // Binds the newly created queue to the "request" exchange.
          queue: queueName,
-         exchange: "logs",
-         routingKey: "info"
+         exchange: "request",
+         routingKey: "*.created.*"
    );
 
 Console.WriteLine(" Press [enter] for stop service.");
-Console.WriteLine(" Consumer Waiting for receive messages with 'info' route key...");
+Console.WriteLine(" Consumer Waiting for receive all order that contain '*.created.*'");
 
 //Creates a consumer instance tied to the specified channel for handling incoming messages.
 var consumer = new EventingBasicConsumer(channel);

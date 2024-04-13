@@ -23,12 +23,12 @@ using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
 
 channel.ExchangeDeclare(
-        exchange: "logs",  // Declare an exchange named "logs".
-        type: ExchangeType.Direct // This exchange type is "Direct",  ExchangeType.Direct indicates a direct exchange.
+        exchange: "request",  // Declare an exchange named "request".
+        type: ExchangeType.Topic // This exchange is of type "Topic", allowing for flexible routing based on topic patterns.
     );
 
 Console.WriteLine("You can create and send 10 randomly generated strings using the 'random' keyword as input.");
-Console.WriteLine(" Start your text with a log level, such as 'error: null exception...', where log levels include info, error ");
+Console.WriteLine("Your message provides a description of an order created in the US.");
 Console.WriteLine(" Type exit for stop! ");
 string message = "";
 
@@ -48,12 +48,10 @@ while (true)
             message = new string(Enumerable.Repeat(chars, random.Next(5, 15))
                 .Select(s => s[random.Next(s.Length)]).ToArray());
 
-            string routekey = (random.Next(0, 10) < 5) ? "error" : "info";
-
-            Console.WriteLine($"{routekey}: {message}");
+            Console.WriteLine($"{message}");
             channel.BasicPublish(
-                exchange: "logs",
-                routingKey: routekey,
+                exchange: "request",
+                routingKey: "order.created.us",
                 basicProperties: null,
                 body: Encoding.UTF8.GetBytes(message)
             );
@@ -62,10 +60,9 @@ while (true)
     }
 
     var body = Encoding.UTF8.GetBytes(message);
-    string routeKey = message.ToLower().StartsWith("error") ? "error" : "info";
     channel.BasicPublish(
-        exchange: "logs",
-        routingKey: routeKey,
+        exchange: "request",
+        routingKey: "order.created.us",
         basicProperties: null,
         body: body
     );
