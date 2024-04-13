@@ -34,7 +34,8 @@
         <li><a href="#basic">Basic</a></li>
         <li><a href="#multi-worker">Multi Worker</a></li> 
 		<li><a href="#exchange">Exchange</a></li> 
-		<li><a href="#routing">Routing</a></li> 		
+		<li><a href="#routing">Routing</a></li> 
+		<li><a href="#topic">Topic</a></li> 		
       </ul>
     </li>
   </ol>
@@ -134,3 +135,9 @@ Similar to the Exchange template, in this scenario, we send messages to an excha
 
 Link here : [Routing](https://github.com/hsjalilian/RabbitMQ/tree/main/src/Routing)
 
+
+## Topic
+
+Similar to the Routing template, in this scenario, we send messages to an exchange with route key. The exchange then routes these messages to the connected queues based on predefined routing rules. Finally, the messages are delivered to consumers that are connected to these queues and route key rules.
+
+Link here : [Topic](https://github.com/hsjalilian/RabbitMQ/tree/main/src/Topic)

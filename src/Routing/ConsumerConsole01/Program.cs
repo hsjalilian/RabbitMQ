@@ -32,7 +32,7 @@ channel.ExchangeDeclare(
 var queueName = channel.QueueDeclare().QueueName;
 
 channel.QueueBind(
-         // Binds the newly created queue to the "logs" exchange with an empty routing key.
+         // Binds the newly created queue to the "logs" exchange with an 'error' routing key.
          queue: queueName,
          exchange: "logs",
          routingKey: "error"
