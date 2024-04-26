@@ -146,4 +146,4 @@ Link here : [Topic](https://github.com/hsjalilian/RabbitMQ/tree/main/src/Topic)
 
 RPC in RabbitMQ involves clients sending requests to a server via a designated queue, with correlation IDs and reply-to queues specified. The server processes requests and sends responses back to the client's designated queue, using the correlation ID for identification. This pattern enables synchronous communication between distributed systems, facilitating seamless interaction and data exchange.
 
-Link here : [Basic](https://github.com/hsjalilian/RabbitMQ/tree/main/src/RPC)
+Link here : [RPC](https://github.com/hsjalilian/RabbitMQ/tree/main/src/RPC)
