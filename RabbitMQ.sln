@@ -19,27 +19,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole02", "src\Mu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exchange", "Exchange", "{30E847FE-62C5-4C9D-ADCB-F29388B00B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsole", "src\Exchange\ProducerConsole\ProducerConsole.csproj", "{7A7390BE-AAAF-463F-84E0-4A58640F0208}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProducerConsole", "src\Exchange\ProducerConsole\ProducerConsole.csproj", "{7A7390BE-AAAF-463F-84E0-4A58640F0208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole01", "src\Exchange\ConsumerConsole01\ConsumerConsole01.csproj", "{E8B4BCC0-7360-45F4-8AEB-F5A91F3C8A92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole01", "src\Exchange\ConsumerConsole01\ConsumerConsole01.csproj", "{E8B4BCC0-7360-45F4-8AEB-F5A91F3C8A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole02", "src\Exchange\ConsumerConsole02\ConsumerConsole02.csproj", "{66D014F1-8645-4B78-BE10-71C929259AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole02", "src\Exchange\ConsumerConsole02\ConsumerConsole02.csproj", "{66D014F1-8645-4B78-BE10-71C929259AD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routing", "Routing", "{47A83BAE-0B81-4215-8B31-163EA55D2A3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsole", "src\Routing\ProducerConsole\ProducerConsole.csproj", "{BDDACA14-04E7-4B02-84CA-2315CC53E1A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProducerConsole", "src\Routing\ProducerConsole\ProducerConsole.csproj", "{BDDACA14-04E7-4B02-84CA-2315CC53E1A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole01", "src\Routing\ConsumerConsole01\ConsumerConsole01.csproj", "{6184CF50-E972-4296-B8A2-FCC280073DAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole01", "src\Routing\ConsumerConsole01\ConsumerConsole01.csproj", "{6184CF50-E972-4296-B8A2-FCC280073DAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole02", "src\Routing\ConsumerConsole02\ConsumerConsole02.csproj", "{D3CEB017-D20B-4698-9AE8-7939AB04C165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole02", "src\Routing\ConsumerConsole02\ConsumerConsole02.csproj", "{D3CEB017-D20B-4698-9AE8-7939AB04C165}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topics", "Topics", "{CB617D9F-3167-40DA-8AF3-FEA1A7135195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsole", "src\Topic\ProducerConsole\ProducerConsole.csproj", "{C4034BA9-C853-4103-8096-FB6655D8BD97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProducerConsole", "src\Topic\ProducerConsole\ProducerConsole.csproj", "{C4034BA9-C853-4103-8096-FB6655D8BD97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole01", "src\Topic\ConsumerConsole01\ConsumerConsole01.csproj", "{3D70D531-910A-4339-94CC-A359250B151D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole01", "src\Topic\ConsumerConsole01\ConsumerConsole01.csproj", "{3D70D531-910A-4339-94CC-A359250B151D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole02", "src\Topic\ConsumerConsole02\ConsumerConsole02.csproj", "{9F081384-AD0C-43A7-B7B8-B615E1F793C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsole02", "src\Topic\ConsumerConsole02\ConsumerConsole02.csproj", "{9F081384-AD0C-43A7-B7B8-B615E1F793C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RPC", "RPC", "{E0CA0FD0-9360-4932-A084-042D0002D09F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsole", "src\RPC\ProducerConsole\ProducerConsole.csproj", "{15B992CF-A738-4FF1-AA13-B31396998942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsole", "src\RPC\ConsumerConsole\ConsumerConsole.csproj", "{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +109,14 @@ Global
 		{9F081384-AD0C-43A7-B7B8-B615E1F793C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F081384-AD0C-43A7-B7B8-B615E1F793C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F081384-AD0C-43A7-B7B8-B615E1F793C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B992CF-A738-4FF1-AA13-B31396998942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B992CF-A738-4FF1-AA13-B31396998942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B992CF-A738-4FF1-AA13-B31396998942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B992CF-A738-4FF1-AA13-B31396998942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +136,8 @@ Global
 		{C4034BA9-C853-4103-8096-FB6655D8BD97} = {CB617D9F-3167-40DA-8AF3-FEA1A7135195}
 		{3D70D531-910A-4339-94CC-A359250B151D} = {CB617D9F-3167-40DA-8AF3-FEA1A7135195}
 		{9F081384-AD0C-43A7-B7B8-B615E1F793C5} = {CB617D9F-3167-40DA-8AF3-FEA1A7135195}
+		{15B992CF-A738-4FF1-AA13-B31396998942} = {E0CA0FD0-9360-4932-A084-042D0002D09F}
+		{3CE8C9E1-ACC6-4EDF-9B7E-4D40FA0408CA} = {E0CA0FD0-9360-4932-A084-042D0002D09F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F06D3D2-0908-4431-83B4-F070B4D2759A}

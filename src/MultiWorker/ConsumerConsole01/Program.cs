@@ -8,13 +8,13 @@ IConfiguration configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .Build();
 
-var serverConnection1 = configuration.GetSection("RabbitMQ");
+var serverConnection = configuration.GetSection("RabbitMQ");
 
 var factory = new ConnectionFactory
 {
-    HostName = serverConnection1.GetValue<string>("HostName"),
-    UserName = serverConnection1.GetValue<string>("Username"),
-    Password = serverConnection1.GetValue<string>("Password")
+    HostName = serverConnection.GetValue<string>("HostName"),
+    UserName = serverConnection.GetValue<string>("Username"),
+    Password = serverConnection.GetValue<string>("Password")
 };
 
 // Establishes a connection to the message broker using the provided factory.
